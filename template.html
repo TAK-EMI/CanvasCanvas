@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Template</title>
+	<style>
+		.table {
+			border-collapse: separate;
+			border-spacing: 5px 5px;
+			display: table;
+		}
+		.table-row {
+			display: table-row;
+		}
+		.table-cell {
+			display: table-cell;
+		}
+		.align-right {
+			text-align: right;
+		}
+	</style>
+</head>
+<body>
+	<h1>Template</h1>
+	<div id="main">
+		<div id="header">
+			<div class="table">
+				<div class="table-row">
+					<div class="table-cell align-right">Name:</div>
+					<div class="table-cell"><input type="text" name="function-name" id="function-name"></div>
+				</div>
+				<div class="table-row">
+					<div class="table-cell align-right">Context:</div>
+					<div class="table-cell"><input type="text" name="context-name" id="context-name" value="ctx"></div>
+				</div>
+			</div>
+		</div>
+		<div id="node-list">
+			<div id="style-fill">
+				<h1>Fill Style</h1>
+				<div class="table">
+					<div class="table-row">
+						<div class="table-cell">Color:</div>
+						<div class="table-cell"><input type="color" name="style-fill-color" id="fill-style-color"></div>
+					</div>
+				</div>
+			</div>
+			<div id="style-stroke">
+				<h1>Stroke Style</h1>
+				<div class="table">
+					<div class="table-row">
+						<div class="table-cell">Color:</div>
+						<div class="table-cell"><input type="color" name="style-fill-color" id="fill-style-color"></div>
+					</div>
+				</div>
+			</div>
+			<div id="shape-line">
+				<h1>Line Shpae</h1>
+				<div class="table">
+					<div class="table-row">
+						<div class="table-cell align-right">Start:</div>
+						<div class="table-cell align-right">X:</div>
+						<div class="table-cell"><input type="number" name="shape-line-start-x" id="line-shape-start-x"></div>
+						<div class="table-cell align-right">Y:</div>
+						<div class="table-cell"><input type="number" name="shape-line-start-y" id="line-shape-start-y"></div>
+					</div>
+					<div class="table-row">
+						<div class="table-cell align-right">End:</div>
+						<div class="table-cell align-right">X:</div>
+						<div class="table-cell"><input type="number" name="shape-line-end-x" id="line-shape-end-x"></div>
+						<div class="table-cell align-right">Y:</div>
+						<div class="table-cell"><input type="number" name="shape-line-end-y" id="line-shape-end-y"></div>
+					</div>
+				</div>
+			</div>
+			<div id="shape-rect">
+				<h1>Rect Shape</h1>
+				<div class="table">
+					<div class="table-row">
+						<div class="table-cell"><input type="checkbox" name="shape-rect-check-clear" id="shape-rect-check-clear">clear</div>
+						<div class="table-cell"><input type="checkbox" name="shape-rect-check-line" id="shape-rect-check-line">line</div>
+						<div class="table-cell"><input type="checkbox" name="shape-rect-check-fill" id="shape-rect-check-fill">fill</div>
+					</div>
+				</div>
+				<div class="table">
+					<div class="table-row">
+						<div class="table-cell align-right">X:</div>
+						<div class="table-cell"><input type="number" name="shape-rect-x" id="shape-rect-x"></div>
+						<div class="table-cell align-right">Y:</div>
+						<div class="table-cell"><input type="number" name="shape-rect-y" id="shape-rect-y"></div>
+					</div>
+					<div class="table-row">
+						<div class="table-cell align-right">Width:</div>
+						<div class="table-cell"><input type="number" name="shape-rect-width" id="shape-rect-width"></div>
+						<div class="table-cell align-right">Height:</div>
+						<div class="table-cell"><input type="number" name="shape-rect-height" id="shape-rect-height"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
